@@ -1,2 +1,2 @@
-# Projeto-Haras
+# Projeto Haras
 Redesign site Recanto Haras SR
