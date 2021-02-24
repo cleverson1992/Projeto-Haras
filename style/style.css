@@ -1,0 +1,67 @@
+/* General style settings */
+/* Font sises */.fs-12{font-size: 12px;} .fs-14{font-size: 14px;} .fs-15{font-size: 15px;} .fs-16{font-size: 16px;} .fs-50 {font-size: 50px;}
+/* Colors */.color-yellow {color: #f0bf17 !important;} .color-grey-all > * {color: #444444 !important;} .color-grey {color: #444444 !important;}
+
+/* Top Bar Settings*/
+.top-bar {
+  border-bottom: solid #e6e3e3 1px;
+}
+.social-media a {
+  padding: 5px 8px;
+}
+.social-media a i:hover {
+  color: #f0bf17;
+}
+
+/* Navbar settings */
+.navbar {
+  padding: 10px 0;
+}
+.navbar .nav-item {
+  padding-left: 15px;
+}
+.nav-item .nav-link {
+  color: #444444 !important;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #f0bf17 !important;
+}
+.nav-link:hover {
+  color: #f0bf17 !important;
+}
+
+/* Carousel settings */
+.carousel-item {
+  height: calc(100vh - 200px);
+  background: no-repeat center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 75% !important;
+}
+.carousel-caption :nth-child(1) {
+  opacity: 0;
+  transform: translatey(-50px);
+  animation: animate-caroucel 1s ease-out;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+}
+.carousel-caption :nth-child(2) {
+  opacity: 0;
+  transform: translatey(40px);
+  animation: animate-caroucel 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes animate-caroucel {
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
